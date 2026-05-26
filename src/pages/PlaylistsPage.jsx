@@ -34,7 +34,7 @@ export default function PlaylistsPage() {
     const playlist = await spotifyPost('/users/' + me.id + '/playlists', {
       name,
       description: 'Generada por HackeadorGitanoEspotifai // ' + new Date().toLocaleDateString(),
-      public: false
+      public: true
     })
 
     if (playlist?.id) {
