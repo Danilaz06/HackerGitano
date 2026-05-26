@@ -549,3 +549,79 @@ button { cursor: pointer; font-family: var(--font-ui); }
 @media (min-width: 601px) {
   .bottom-nav { display: none; }
 }
+
+/* RESPONSIVE COMPLETO */
+@media (max-width: 600px) {
+  /* Stats grid en movil */
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .stat-card { padding: 12px; }
+  .stat-value { font-size: 1.2rem; }
+
+  /* Dashboard grid en movil */
+  .dashboard-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Artists grid en movil */
+  .artists-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Track row en movil */
+  .track-bar-wrap { display: none; }
+  .track-row { padding: 8px 6px; }
+  .track-img { width: 36px; height: 36px; }
+
+  /* Playlist grid en movil */
+  .playlist-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  /* Terminal body padding */
+  .terminal-body { padding: 12px; }
+
+  /* Tabs scroll horizontal */
+  .tabs { overflow-x: auto; white-space: nowrap; gap: 0; }
+  .tab { flex-shrink: 0; padding: 8px 12px; font-size: 0.72rem; }
+
+  /* Login page */
+  .login-ascii { font-size: 0.45rem; }
+  .login-title { font-size: 1.1rem; }
+  .login-sub { font-size: 0.72rem; }
+  .spotify-btn { padding: 12px 20px; font-size: 0.8rem; }
+
+  /* Page header */
+  .page-header h2 { font-size: 0.95rem; }
+  .page-header p { font-size: 0.72rem; }
+
+  /* Friend row */
+  .friend-row { padding: 10px; }
+
+  /* Genre grid */
+  .genre-chip { font-size: 0.65rem; padding: 3px 8px; }
+
+  /* Progress bar en movil */
+  .progress-bar-wrap { width: 80px; }
+
+  /* Btn */
+  .btn { padding: 8px 14px; font-size: 0.75rem; }
+
+  /* Terminal title truncate */
+  .terminal-title { max-width: 180px; overflow: hidden; text-overflow: ellipsis; }
+
+  /* Generator form en movil */
+  .gen-form-row { flex-direction: column !important; }
+}
+
+/* TABLET */
+@media (max-width: 900px) and (min-width: 601px) {
+  .sidebar { width: 180px; }
+  .main-content { margin-left: 180px; padding: 24px 20px; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .playlist-grid { grid-template-columns: repeat(3, 1fr); }
+}
