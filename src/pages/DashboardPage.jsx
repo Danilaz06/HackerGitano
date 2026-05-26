@@ -57,7 +57,7 @@ export default function DashboardPage() {
         </div>
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: 16 }}>
         <div className="terminal">
           <div className="terminal-bar">
             <div className="terminal-dot red" /><div className="terminal-dot yellow" /><div className="terminal-dot green" />
